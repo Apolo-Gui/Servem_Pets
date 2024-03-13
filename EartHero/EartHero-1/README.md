@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  Atualmente, o planeta sofre com resquícios de poluição e é importante que as pessoas comecem a aderir práticas de vida sustentáveis diminuindo os impactos ambientais causados por anos de inconsciência ganância do ser humano. A ideia do tema consiste em transformar a reciclagem em uma prática divertida, por meio de uma competição amigável e recompensante, também trazendo informações que auxiliam em como ter uma vida sustentável.
+
 </p>
 ## Índice
 
@@ -17,9 +17,10 @@
 - [Autores](#autores)
 - [Licença](#licença)
 
-## Visão Geral
-
-Uma breve explicação sobre o que seu projeto faz e por que é útil.
+<h2 align="center">Visão Geral</h2>
+<p align="center">
+  Atualmente, o planeta sofre com resquícios de poluição e é importante que as pessoas comecem a aderir práticas de vida sustentáveis diminuindo os impactos ambientais causados por anos de inconsciência ganância do ser humano. A ideia do tema consiste em transformar a reciclagem em uma prática divertida, por meio de uma competição amigável e recompensante, também trazendo informações que auxiliam em como ter uma vida sustentável.
+</p>
 
 ## Funcionalidades
 
