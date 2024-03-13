@@ -1,4 +1,4 @@
-<h1 align="center" style="color: #974C1C;">EartHero</h1>
+<h1 align="center" style="color: #8B4513;">EartHero</h1>
 
 <p align="center">
   <img src="EartHero/assets/images/earthero.png" width="300">
