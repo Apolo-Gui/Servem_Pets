@@ -1,7 +1,7 @@
 <h1 align="center">EartHero</h1>
 
 <p align="center">
-  <img src="EartHero/EartHero-1/EartHero/assets/images/earthero.png" width="150" heigth="150">
+  <img src="EartHero/EartHero-1/EartHero/assets/images/earthero.png" width="150" heigth="150" align="left">
 </p>
 
 <p align="center">
