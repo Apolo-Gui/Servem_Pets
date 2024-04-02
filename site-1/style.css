@@ -63,7 +63,7 @@ a {
 .container {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(#232932, #2c3138, #232932);
+  background-color:  #974C1C;
 }
 .menu-icon {
   width: 3rem;
@@ -81,7 +81,7 @@ a {
 .line {
   width: 3rem;
   height: 0.2rem;
-  background-color: #7890FB;
+  background-color: #E8A650;
   transition: transform 0.5s;
 }
 .change .line-1 {
@@ -156,7 +156,7 @@ a {
 .section-bg-heading {
   position: absolute;
   bottom: 0;
-  transform: translateX(-50%);
+  transform: translateX(-40%);
   font-family: "Caveat", sans-serif;
   font-size: 30rem;
   width: 100%;
@@ -174,7 +174,7 @@ a {
   color: #fff;
 }
 .logo span:nth-child(2) {
-  color: #7890FB;
+  color: #E8A650;
   font-family: "Caveat", cursive;
   font-weight: bold;
   font-size: 5rem;
@@ -225,7 +225,7 @@ a {
   letter-spacing: 0.1rem;
 }
 .greeting span {
-  color: #7890FB;
+  color: #E8A650;
 }
 .name {
   font-size: 8rem;
@@ -235,7 +235,7 @@ a {
   text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 .name span {
-  color: #7890FB;
+  color: #E8A650;
 }
 
 .change-text {
@@ -256,7 +256,7 @@ a {
   position: absolute;
   display: flex;
   opacity: 0;
-  color: #7890FB;
+  color: #E8A650;
 }
 
 .change-text h3 .word .letter {
@@ -288,12 +288,13 @@ a {
   text-transform: capitalize;
   margin-left: 1.2rem;
 }
+/*ABOUT*/
 .about {
   width: 60rem;
   font-family: "Caveat", cursive;
   font-size: 2.5rem;
   line-height: 1;
-  color: #a9abac;
+  color: #a9abac;/*Cor do texto*/
   margin-bottom: 5rem;
 }
 .social-media {
@@ -314,7 +315,7 @@ a {
 .btn {
   width: 20rem;
   height: 6rem;
-  border: 0.2rem solid #7890FB;
+  border: 0.2rem solid #E8A650;
   border-radius: 3rem;
   background-color: transparent;
   font-size: 1.4rem;
@@ -328,7 +329,7 @@ a {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: #7890FB;
+  background-color: #E8A650;
   border-radius: 3rem;
   position: absolute;
   top: 0;
@@ -368,7 +369,7 @@ a {
   height: 55rem;
   width: 55rem;
   border-radius: 50%;
-  border: 1px solid #7890FB;
+  border: 1px solid #E8A650;
   position: relative;
   animation: circleAnim linear infinite 20s;
 }
@@ -385,7 +386,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #29d882;
+  background: #E8A650;
   color: #fff;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
   font-size: 22px;
@@ -419,9 +420,9 @@ a {
 .dev-img-wrapper {
   width: 45rem;
   height: 45rem;
-  background-color: #7890FB;
+  background-color: #fff;
   border-radius: 50%;
-  padding: 2rem 2rem 0 2rem;
+  padding: 3rem 5rem 0 2rem;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
@@ -459,7 +460,7 @@ a {
   text-align: center;
 }
 .dev-works span:nth-child(2) {
-  color: #7890FB;
+  color: #974C1C;
   width: 50%;
 }
 
@@ -472,7 +473,7 @@ a {
   flex-direction: column;
   align-items: center;
   position: relative;
-  background: linear-gradient(#232932, #2c3138, #232932);
+  background: #974C1C;
  
 }
 .section-heading {
@@ -1186,4 +1187,8 @@ textarea {
   .icons {
     display: none;
   }
+}
+
+hr{
+  background-color:rgba(0, 0, 0, 0.3);
 }
