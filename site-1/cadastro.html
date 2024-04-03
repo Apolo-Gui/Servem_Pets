@@ -20,7 +20,7 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
-    margin: 20px auto; /* Adicionado para centralizar o card */
+    margin: 100px auto; /* Aumentei a margem superior */
     max-width: 400px; /* Adicionado para limitar a largura do card */
   }
 
@@ -32,10 +32,8 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-bottom: 20px;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
+    margin: 0 auto 20px; /* Centraliza a imagem dentro do card e adiciona margem na parte inferior */
+    display: block; /* Garante que a imagem seja exibida como bloco para centralização */
   }
 
   .register-card form {
@@ -73,7 +71,7 @@
 <body>
 
 <div class="register-card">
-  <img src="https://via.placeholder.com/100" alt="Logo">
+  <img src="asset/images/1221.jpg" alt="Logo">
   <h1>Cadastro</h1>
   <form>
     <input type="text" placeholder="Nome Completo">
