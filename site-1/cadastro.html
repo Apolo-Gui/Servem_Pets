@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tela de Cadastro</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #974C1C;
+    overflow-y: auto; /* Adicionado para permitir rolagem vertical */
+  }
+
+  .register-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    margin: 20px auto; /* Adicionado para centralizar o card */
+    max-width: 400px; /* Adicionado para limitar a largura do card */
+  }
+
+  .register-card h1 {
+    color: #974C1C;
+  }
+
+  .register-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+  }
+
+  .register-card form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .register-card input[type="text"],
+  .register-card input[type="email"],
+  .register-card input[type="password"],
+  .register-card input[type="date"],
+  .register-card input[type="tel"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  .register-card input[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #974C1C;
+    color: white;
+    cursor: pointer;
+  }
+
+  .register-card input[type="submit"]:hover {
+    background-color: #EACCA8;
+  }
+</style>
+</head>
+<body>
+
+<div class="register-card">
+  <img src="https://via.placeholder.com/100" alt="Logo">
+  <h1>Cadastro</h1>
+  <form>
+    <input type="text" placeholder="Nome Completo">
+    <input type="email" placeholder="Email">
+    <input type="date" placeholder="Data de Nascimento">
+    <input type="text" placeholder="Endereço">
+    <input type="text" placeholder="CPF">
+    <input type="tel" placeholder="Número de Telefone">
+    <input type="password" placeholder="Senha">
+    <input type="password" placeholder="Confirmar Senha">
+    <input type="submit" value="Cadastrar">
+  </form>
+</div>
+
+</body>
+</html>
