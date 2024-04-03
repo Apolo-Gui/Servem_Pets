@@ -198,7 +198,7 @@ a {
   width: 3rem;
   height: 3rem;
   border: 0.2rem solid #bbb;
-  background-color: #1d222a;
+  background-color: #E8A650;
   border-radius: 50%;
   position: absolute;
   left: -1.65rem;
@@ -209,7 +209,7 @@ a {
   width: 3rem;
   height: 3rem;
   border: 0.2rem solid #bbb;
-  background-color: #1d222a;
+  background-color: #E8A650;
   border-radius: 50%;
   position: absolute;
   left: -1.65rem;
@@ -292,7 +292,7 @@ a {
 .about {
   width: 60rem;
   font-family: "Caveat", cursive;
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 1;
   color: #a9abac;/*Cor do texto*/
   margin-bottom: 5rem;
@@ -486,7 +486,7 @@ a {
 }
 .sub-heading {
   font-size: 2rem;
-  color: #7890FB;
+  color: #E8A650;
   text-transform: uppercase;
 }
 .sub-heading span {
@@ -529,7 +529,7 @@ a {
   font-family: "Caveat", cursive;
   width: 70rem;
   font-family: "Caveat", cursive;
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 1;
   color: #a9abac;
   margin-bottom: 5rem;
@@ -569,7 +569,7 @@ a {
 }
 .sub-heading {
   font-size: 2rem;
-  color: #7890FB;
+  color: #E8A650;
   text-transform: uppercase;
 }
 .sub-heading span {
