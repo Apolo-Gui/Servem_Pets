@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,13 +13,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Define a altura da tela como 100% da viewport */
-    overflow-y: auto; /* Adicionado para permitir rolagem vertical */
+    height: 100vh; 
+    overflow-y: auto; 
   }
 
   a {
     text-decoration: none;
     color:#974C1C;
+    height:30px;
   }
 
   .login-card {
@@ -29,7 +30,7 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
-    max-width: 400px; /* Adicionado para limitar a largura do card */
+    max-width: 400px; 
   }
 
   .login-card h1 {
@@ -78,12 +79,12 @@
   <img src="asset/images/1221.jpg" alt="Logo">
   <h1>Login</h1>
   <form>
-    <input type="text" placeholder="Usuário">
-    <input type="password" placeholder="Senha">
+    <input type="text" placeholder="Usuário" required>
+    <input type="password" placeholder="Senha" required>
     <input type="submit" value="Entrar">
     <br>
-    <a href="#" target="_blank">Esqueci a Senha</a>
-    <a href="#" target="_blank">Cadastre-se</a>
+    <a href="RecuperaçãoDeSenha.html" target="_blank">Esqueceu sua senha?</a>
+    <a href="cadastro.html" target="_blank">Cadastre-se!</a>
   </form>
 </div>
 

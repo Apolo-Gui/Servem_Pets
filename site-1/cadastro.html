@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #974C1C;
-    overflow-y: auto; /* Adicionado para permitir rolagem vertical */
+    overflow-y: auto; 
   }
 
   .register-card {
@@ -20,8 +20,8 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
-    margin: 100px auto; /* Aumentei a margem superior */
-    max-width: 400px; /* Adicionado para limitar a largura do card */
+    margin: 100px auto; 
+    max-width: 400px; 
   }
 
   .register-card h1 {
@@ -32,8 +32,8 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin: 0 auto 20px; /* Centraliza a imagem dentro do card e adiciona margem na parte inferior */
-    display: block; /* Garante que a imagem seja exibida como bloco para centralização */
+    margin: 0 auto 20px; 
+    display: block; 
   }
 
   .register-card form {
@@ -73,18 +73,25 @@
 <div class="register-card">
   <img src="asset/images/1221.jpg" alt="Logo">
   <h1>Cadastro</h1>
-  <form>
-    <input type="text" placeholder="Nome Completo">
-    <input type="email" placeholder="Email">
-    <input type="date" placeholder="Data de Nascimento">
-    <input type="text" placeholder="Endereço">
-    <input type="text" placeholder="CPF">
-    <input type="tel" placeholder="Número de Telefone">
-    <input type="password" placeholder="Senha">
-    <input type="password" placeholder="Confirmar Senha">
+  <form id="cadastroForm">
+    <input type="text" placeholder="Nome Completo" required>
+    <input type="email" placeholder="Email" required>
+    <input type="date" placeholder="Data de Nascimento" required>
+    <input type="text" placeholder="Endereço" required>
+    <input type="text" placeholder="CPF" required>
+    <input type="tel" placeholder="Número de Telefone" required>
+    <input type="password" placeholder="Senha" required>
+    <input type="password" placeholder="Confirmar Senha" required>
     <input type="submit" value="Cadastrar">
   </form>
 </div>
+
+<script>
+  document.getElementById("cadastroForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    window.location.href = 'conclusao_cadastro.html'; 
+  });
+</script>
 
 </body>
 </html>
