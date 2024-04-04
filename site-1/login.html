@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tela de Login</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <style>
   body {
     margin: 0;
@@ -56,6 +57,20 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    position: relative;
+  }
+
+  .password-wrapper {
+    position: relative;
+  }
+
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #ccc;
   }
 
   .login-card input[type="submit"] {
@@ -87,6 +102,21 @@
     <a href="cadastro.html" target="_blank">Cadastre-se!</a>
   </form>
 </div>
+
+<script>
+  document.getElementById("togglePassword").addEventListener("click", function() {
+    var senhaInput = document.getElementById("senha");
+    if (senhaInput.type === "password") {
+      senhaInput.type = "text";
+      this.classList.remove("fa-eye");
+      this.classList.add("fa-eye-slash");
+    } else {
+      senhaInput.type = "password";
+      this.classList.remove("fa-eye-slash");
+      this.classList.add("fa-eye");
+    }
+  });
+</script>
 
 </body>
 </html>
