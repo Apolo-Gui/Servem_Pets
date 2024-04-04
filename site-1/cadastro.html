@@ -128,7 +128,7 @@
   });
 
   document.getElementById("togglePassword").addEventListener("click", function() {
-    var senhaInput = document.getElementById("senha");
+    var senhaInput = document.getElementById("Confirmar Senha");
     if (senhaInput.type === "password") {
       senhaInput.type = "text";
       this.classList.remove("fa-eye");
@@ -141,16 +141,21 @@
   });
 
   document.getElementById("toggleConfirmPassword").addEventListener("click", function() {
-    var confirmarSenhaInput = document.getElementById("confirmarSenha");
-    if (confirmarSenhaInput.type === "password") {
-      confirmarSenhaInput.type = "text";
+    var senhaInput = document.getElementById("senha");
+    if (senhaInput.type === "password") {
+      senhaInput.type = "text";
       this.classList.remove("fa-eye");
       this.classList.add("fa-eye-slash");
     } else {
-      confirmarSenhaInput.type = "password";
+      senhaInput.type = "password";
       this.classList.remove("fa-eye-slash");
       this.classList.add("fa-eye");
     }
+  });
+</script>
+
+</body>
+</html>
   });
 </script>
 
