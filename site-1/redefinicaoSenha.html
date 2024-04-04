@@ -10,7 +10,7 @@
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #974C1C;
-    overflow-y: auto; /* Adicionado para permitir rolagem vertical */
+    overflow-y: auto; 
   }
 
   .password-recovery-card {
@@ -20,8 +20,8 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
-    margin: 100px auto; /* Aumentei a margem superior */
-    max-width: 400px; /* Adicionado para limitar a largura do card */
+    margin: 100px auto; 
+    max-width: 400px; 
   }
 
   .password-recovery-card h1 {
@@ -32,8 +32,8 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin: 0 auto 20px; /* Centraliza a imagem dentro do card e adiciona margem na parte inferior */
-    display: block; /* Garante que a imagem seja exibida como bloco para centralização */
+    margin: 0 auto 20px;
+    display: block; 
   }
 
   .password-recovery-card form {
@@ -69,11 +69,18 @@
 <div class="password-recovery-card">
   <img src="asset/images/1221.jpg" alt="Logo">
   <h1>Recuperação de Senha</h1>
-  <form>
-    <input type="email" placeholder="Email">
-    <input type="submit" value="Enviar">
+  <form id="redefinicaoForm">
+    <input type="email" placeholder="Email" required>
+    <input type="submit" value="Enviar Pedido de Redefinição">
   </form>
 </div>
+
+<script>
+  document.getElementById("redefinicaoForm").addEventListener("submit", function(event) {
+    window.location.href = 'redefinicaoSenha2.html'; 
+    event.preventDefault(); 
+  });
+</script>
 
 </body>
 </html>
