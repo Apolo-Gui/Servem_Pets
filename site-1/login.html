@@ -51,7 +51,8 @@
   }
 
   .login-card input[type="text"],
-  .login-card input[type="password"] {
+  .login-card input[type="password"],
+  .login-card input[type="email"] {
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -73,7 +74,7 @@
     color: #ccc;
   }
 
-  .login-card input[type="submit"] {
+  .login-card button[type="submit"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -83,7 +84,7 @@
     cursor: pointer;
   }
 
-  .login-card input[type="submit"]:hover {
+  .login-card button[type="submit"]:hover {
     background-color: #EACCA8;
   }
 </style>
@@ -93,15 +94,13 @@
 <div class="login-card">
   <img src="asset/images/1221.jpg" alt="Logo">
   <h1>Login</h1>
-  <form>
-    <input type="text" placeholder="Email" required>
+  <form id="loginForm">
+    <input type="email" placeholder="Email" required>
     <div class="password-wrapper">
       <input type="password" id="senha" placeholder="Senha" required>
       <i class="fas fa-eye password-toggle" id="togglePassword"></i>
     </div>
-    <a href="/site-1/init.html">
-      <input type="submit" value="Entrar">
-    </a>
+    <button type="submit">Entrar</button>
     <br>
     <a href="redefinicaoSenha.html">Esqueceu sua senha?</a>
     <a href="cadastro.html">Cadastre-se!</a>
@@ -119,6 +118,18 @@
       senhaInput.type = "password";
       this.classList.remove("fa-eye-slash");
       this.classList.add("fa-eye");
+    }
+  });
+
+  document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita o envio automático do formulário
+    var emailInput = document.querySelector('input[type="email"]');
+    var senhaInput = document.getElementById("senha");
+
+    if (!emailInput.checkValidity() || !senhaInput.checkValidity()) {
+      alert("Por favor, preencha o email e a senha corretamente.");
+    } else {
+      window.location.href = 'init.html';
     }
   });
 </script>
