@@ -6,9 +6,9 @@
 
 :root {
   /* ----- scroll bar colors ----- */
-  --scroll-bar-color: #E8A650;
-  --scroll-thumb-color: #974C1C;
-  --scroll-thumb-hover-color: #974C1C;
+  --scroll-bar-color: #974C1C;
+  --scroll-thumb-color: #E8A650;
+  --scroll-thumb-hover-color: #E8A650;
 }
 
 /*.dark-mood{

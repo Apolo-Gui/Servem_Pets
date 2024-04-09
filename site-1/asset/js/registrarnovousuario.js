@@ -1,0 +1,1 @@
+registrarNovoUsuario('seuemail@example.com', 'suaSenhaSegura', 'Seu Nome', 25);
