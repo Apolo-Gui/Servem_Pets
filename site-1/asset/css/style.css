@@ -43,6 +43,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  cursor: url("/site-1/asset/images/1221.jpg") , auto;
 }
 
 /*-------- Particules : background -----*/

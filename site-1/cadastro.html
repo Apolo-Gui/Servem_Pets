@@ -5,13 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tela de Cadastro</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="icon" href="/site-1/asset/images/1221.jpg">
 <style>
+@import url("https://fonts.cdnfonts.com/css/pp-neue-montreal");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Racing+Sans+One&family=Rowdies:wght@300;400;700&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Racing+Sans+One&family=Sacramento&display=swap");
+
+
   body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Rowdies', Arial, sans-serif;
     background-color: #974C1C;
     overflow-y: auto; 
+    cursor: url("asset/images/1221.jpg") auto;
   }
 
   .register-card {
@@ -21,7 +30,7 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: relative;
-    margin: 100px auto; 
+    margin: 25px auto; 
     max-width: 400px; 
   }
 
@@ -68,17 +77,17 @@
     color: #ccc;
   }
 
-  .register-card input[type="submit"] {
+  .register-card button[type="submit"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 35px;
     background-color: #974C1C;
     color: white;
     cursor: pointer;
   }
 
-  .register-card input[type="submit"]:hover {
+  .register-card button[type="submit"]:hover {
     background-color: #EACCA8;
   }
 
@@ -97,7 +106,7 @@
 <div class="register-card">
   <img src="asset/images/1221.jpg" alt="Logo">
   <h1>Cadastro</h1>
-  <form id="cadastroForm" action="conclusao_cadastro.html" method="post">
+  <form id="cadastroForm">
     <input type="text" placeholder="Nome Completo" required>
     <input type="email" placeholder="Email" required>
     <input type="date" placeholder="Data de Nascimento" required>
@@ -113,7 +122,7 @@
       <i class="fas fa-eye password-toggle" id="toggleConfirmPassword"></i>
     </div>
     <span class="error-message" id="passwordError" style="display: none;">As senhas não coincidem.</span>
-    <input type="submit" value="Cadastrar">
+    <button class="register-card" onclick="window.location.href = '/site-1/conclusao_cadastro.html';" type="submit">Cadastrar</button>
   </form>
 </div>
 
