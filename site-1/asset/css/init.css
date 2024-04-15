@@ -57,7 +57,7 @@ html {
 }
 
 a {
-  color: #E8A650;
+  color: #fff;
 }
 /* ------------ Navigation ------------ */
 
@@ -263,11 +263,11 @@ button:hover {
   
 }
 .project-card {
-  width: 40rem;
+  width: 30rem;
   height: 55rem;
   background-color: #72C5EF;
   opacity: 95%;
-  margin: 2rem;
+  margin: 10px;
   padding: 2rem;
   border-radius: 1rem;
   display: flex;
@@ -277,8 +277,8 @@ button:hover {
 
 
 .project-img {
-  width: 36rem;
-  height: 20rem;
+  width: 100%;
+  height: auto;
   overflow: hidden;
   border-radius: 1rem;
 }
